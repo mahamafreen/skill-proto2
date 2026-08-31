@@ -1,0 +1,282 @@
+/* ==========================================================================
+   SKILLFUL SIR ADNAN — RESPONSIVE STYLES
+   Mobile-first breakpoints
+   ========================================================================== */
+
+/* --- Tablet: 1024px and below --- */
+@media (max-width: 1024px) {
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 3rem 0;
+  }
+
+  .hero-visual {
+    justify-content: flex-start;
+  }
+
+  .hero-image-frame {
+    max-width: 100%;
+  }
+
+  .hero-main-img {
+    height: 380px;
+  }
+
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .featured-meta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .instructor-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .instructor-photo-frame {
+    max-width: 360px;
+  }
+
+  .instructor-photo {
+    height: 380px;
+  }
+
+  .certificate-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .dashboard-two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .continue-learning-hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Mobile: 768px and below --- */
+@media (max-width: 768px) {
+
+  :root {
+    --header-height: 64px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-actions .dashboard-switcher,
+  .nav-actions .btn:not(.btn-primary) {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .hero-slides-wrapper {
+    min-height: 480px;
+  }
+
+  .hero-grid {
+    padding: 2.5rem 0;
+    gap: 2rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-controls-bar {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .hero-progress-container {
+    flex-grow: 0;
+    width: 100%;
+    order: 3;
+    margin: 0;
+    max-width: none;
+  }
+
+  .hero-main-img {
+    height: 280px;
+  }
+
+  .section-wrapper {
+    padding: 3.5rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learn-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-section-inner {
+    padding: 2rem 1.5rem;
+  }
+
+  .featured-meta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .story-main-quote {
+    font-size: 1.0625rem;
+  }
+
+  .featured-story-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .intro-stat-row {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.25rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Dashboard mobile */
+  .dashboard-root {
+    flex-direction: column;
+  }
+
+  .dashboard-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    padding: 0.5rem;
+    overflow-x: auto;
+  }
+
+  .sidebar-link {
+    white-space: nowrap;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.6875rem;
+    padding: 0.5rem 0.75rem;
+    align-items: center;
+  }
+
+  .sidebar-header,
+  .sidebar-footer {
+    display: none;
+  }
+
+  .dashboard-content-body {
+    padding: 1.25rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .explorer-top-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-input-wrapper {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .explorer-secondary-filters {
+    gap: 0.75rem;
+  }
+}
+
+/* --- Small Mobile: 480px and below --- */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h1 {
+    font-size: 1.875rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn-lg {
+    padding: 0.8125rem 1.5rem;
+    font-size: 0.9375rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .featured-meta-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .intro-stat-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,233 @@
+/* ==========================================================================
+   SKILLFUL SIR ADNAN — HERO SECTION (STATIC)
+   Single strong hero — photo left, content right, no carousel
+   ========================================================================== */
+
+.hero-section {
+  background-color: var(--bg-dark);
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.hero-static-grid {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 4rem;
+  align-items: center;
+  padding: 4.5rem 0 0 0;
+}
+
+/* Content side */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 4.5rem;
+}
+
+.hero-pretitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.01em;
+}
+
+.hero-title {
+  font-size: clamp(2.25rem, 4.5vw, 3.75rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.25rem;
+  color: #ffffff;
+}
+
+.hero-title .accent-text {
+  color: var(--accent-primary);
+}
+
+.hero-description {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 500px;
+  margin-bottom: 1.75rem;
+}
+
+/* Course chips row */
+.hero-course-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-bottom: 2rem;
+}
+
+.hero-chip {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  color: rgba(255, 255, 255, 0.55);
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* CTAs */
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+/* The outline button needs white treatment inside dark hero */
+.hero-section .btn-outline {
+  color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.25);
+  background: transparent;
+}
+
+.hero-section .btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+
+/* Trust row */
+.hero-trust-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.hero-trust-item svg {
+  color: var(--accent-primary);
+  flex-shrink: 0;
+}
+
+/* Photo side — flush to bottom */
+.hero-visual {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero-photo-block {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-main-img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.hero-photo-caption {
+  background-color: var(--accent-primary);
+  padding: 0.875rem 1.25rem;
+}
+
+.hero-caption-name {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: #ffffff;
+}
+
+.hero-caption-role {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 0.125rem;
+}
+
+/* Remove all old slider styles that are no longer used */
+.hero-slides-wrapper,
+.hero-slide,
+.hero-grid,
+.hero-controls-bar,
+.hero-slider-container,
+.hero-floating-widget,
+.widget-progress,
+.widget-live,
+.widget-cert,
+.hero-nav-buttons,
+.hero-progress-container,
+.hero-slide-counter {
+  display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-static-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-bottom: 0;
+  }
+
+  .hero-content {
+    padding-bottom: 0;
+  }
+
+  .hero-visual {
+    justify-content: flex-start;
+  }
+
+  .hero-photo-block {
+    max-width: 340px;
+  }
+
+  .hero-main-img {
+    height: 360px;
+  }
+
+  .hero-title {
+    font-size: clamp(1.75rem, 6vw, 2.75rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-static-grid {
+    padding-top: 2.5rem;
+  }
+
+  .hero-trust-row {
+    gap: 1rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-photo-block {
+    max-width: 100%;
+  }
+
+  .hero-main-img {
+    height: 260px;
+  }
+}
